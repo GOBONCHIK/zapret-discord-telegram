@@ -1,19 +1,21 @@
 @echo off
 set "LOCAL_VERSION=1.9.0b"
 cd /d "%~dp0"
+set "WINWSB=%~dp0bin\winwsb.exe"
+if not exist "%WINWSB%" (
+    echo [ERROR] winwsb.exe not found in "%~dp0bin"
+    echo Make sure the file is here: "%~dp0bin\winwsb.exe"
+    pause
+)
 
-set "WINWSB=%~dp0winwsb.exe"
-if not exist "%WINWSB%" set "WINWSB=winwsb.exe"
 for %%F in ("%WINWSB%") do set "WINWSB_ABS=%%~fF"
+
 set "WORKDIR=%~dp0"
 if not defined WORKDIR set "WORKDIR=%CD%"
 
-powershell -NoProfile -Command "try { Start-Process -FilePath \"!WINWSB_ABS!\" -WorkingDirectory \"!WORKDIR!\" -WindowStyle Hidden } catch { exit 1 }" >nul 2>&1
-if errorlevel 1 start "" /min "!WINWSB_ABS!"
-
-endlocal
-goto :EOF
-
+powershell -NoProfile -Command ^
+ "Start-Process -FilePath '%WINWSB_ABS%' -WorkingDirectory '%WORKDIR%' -WindowStyle Hidden" ^
+ >nul 2>&1
 
 :: External commands
 if "%~1"=="status_zapret" (

@@ -1,6 +1,6 @@
 <div align="center">
 
-# <img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" height=28 /> <a href="https://github.com/Flowseal/">Flowseal</a><a href="https://github.com/Flowseal/zapret-discord-youtube">/zapret-discord-youtube</a> <img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" height=28 />
+# <img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" height=28 /> <a href="https://github.com/GOBONCHIK/">GOBONCHIK</a><a href="https://github.com/GOBONCHIK/zapret-discord-youtube">/zapret-discord-telegram-youtube-whatsapp</a> <img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" height=28 />
 </div>
 
 > [!CAUTION]
@@ -30,7 +30,7 @@
 1. Включите Secure DNS. В Chrome - "Использовать безопасный DNS", и выбрать поставщика услуг DNS (выбрать вариант, отличный от поставщика по умолчанию). В Firefox - "Включить DNS через HTTPS, используя: Максимальную защиту"
     * В **Windows 11** поддерживается включение Secure DNS прямо в настройках - [инструкция тут](https://www.howtogeek.com/765940/how-to-enable-dns-over-https-on-windows-11/). Рекомендуется, если вы пользуетесь Windows 11
 
-2. Загрузите архив (zip/rar) со [страницы последнего релиза](https://github.com/Flowseal/zapret-discord-youtube/releases/latest)
+2. Загрузите архив (zip/rar) со [страницы последнего релиза](https://github.com/GOBONCHIK/zapret-discord-telegram-youtube-whatsapp/releases/latest)
 
 3. Распакуйте содержимое архива по пути, который не содержит кириллицу/спец. символы
 
